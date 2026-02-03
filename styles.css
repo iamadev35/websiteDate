@@ -86,12 +86,47 @@ body{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#envelope{
 
-    width: 200px;
-    animation: pulse 2s infinite;
-    cursor: pointer;
-    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+#envelope{
+        width: 200px;
+        animation: pulse 2s infinite;
+        cursor: pointer;
+        filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+
+/* --- Responsive styles for mobile --- */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        min-height: 100vh;
+        padding: 0;
+        font-size: 16px;
+    }
+    #envelope {
+        width: 120px;
+    }
+    #letter-window {
+        width: 98vw;
+        max-width: 98vw;
+        aspect-ratio: unset;
+        padding: 10px 5px 0 5px;
+        font-size: 1rem;
+    }
+    .cat {
+        width: 80px !important;
+        max-width: 90vw;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn {
+        width: 80px !important;
+        max-width: 90vw;
+    }
+    #falling-hearts {
+        height: 100vh;
+    }
 }
 
 #letter-container{
